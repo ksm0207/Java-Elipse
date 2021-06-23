@@ -13,9 +13,9 @@ public class Animal {
 		this.time = time;
 		
 		if (this.time == 1) {
-			System.out.print("Àá ²Ù·¯±â" +"\n");
+			System.out.print("ìž  ê¾¸ëŸ¬ê¸°" +"\n");
 		}else if(this.time == 2) {
-			System.out.print("Àá ¸¸ º¸ !!" + "\n");
+			System.out.print("ìž  ë§Œ ë³´ !!" + "\n");
 		}else {
 			System.out.print("null" + "\n");
 		}

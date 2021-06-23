@@ -11,9 +11,9 @@ public class HouseDog extends Dog{
 	public HouseDog(int time) {
 		
 		if(time == 1) {
-			sleepDog(1);
+			this.sleepDog(1);
 		}else if(time == 2) {
-			sleepDog(2);
+			this.sleepDog(2);
 		}else {
 			System.out.print("null");
 		}
