@@ -8,12 +8,12 @@ public class HouseDog extends Dog{
 	}
 	
 	// 2. Integer Input
-	public HouseDog(int time) {
+	public HouseDog(int type) {
 		
-		if(time == 1) {
-			this.sleepDog(1);
-		}else if(time == 2) {
-			this.sleepDog(2);
+		if(type == 1) {
+			this.setName("진돗개" +"\n");
+		}else if(type == 2) {
+			this.setName("말티즈" +"\n");
 		}else {
 			System.out.print("null");
 		}
@@ -30,10 +30,11 @@ public class HouseDog extends Dog{
 	
 	public static void main(String [] args) {
 		
-		HouseDog houseD = new HouseDog("사모예드");
-		HouseDog sleepD = new HouseDog(1);
+		HouseDog houseD = new HouseDog("사모예드 \n");
+		HouseDog typeD = new HouseDog(1);
 		
 		System.out.print(houseD.name);
+		System.out.print(typeD.name);
 
 	}
 }
