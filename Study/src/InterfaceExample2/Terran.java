@@ -2,7 +2,7 @@ package InterfaceExample2;
 
 import java.util.Scanner;
 
-import InterfaceExample.Predator;
+
 
 public class Terran {
 	
@@ -42,10 +42,11 @@ public class Terran {
 		System.out.print("(2) " + md.getName() + " " + md.getMineral() + " " + md.getGas()+"\n");
 		System.out.print("(3) " + fb.getName() + " " + fb.getMineral() + " " + fb.getGas()+"\n");
 		System.out.print("(4) " + gt.getName() + " " + gt.getMineral() + " " + gt.getGas()+"\n");
+		System.out.print("(5) " +"Exit"+"\n");
 		System.out.print("============================================================\n");
 		
 		while (true) {
-			System.out.print("Select Menu (1) ~ (4) " +"\n");
+			System.out.print("Select Menu [(1) ~ (5)]" +"\n");
 			int select = scan.nextInt();
 			
 			if (select == 1) {
@@ -62,7 +63,7 @@ public class Terran {
 				
 			}else if (select == 2) {
 				
-				if (myMoney > md.getMineral() || gasMoney < md.getGas() ) {
+				if (myMoney < md.getMineral() || gasMoney < md.getGas() ) {
 					System.out.print("I'm sorry , You don't have any money \n");
 					break;
 				}else {
@@ -72,8 +73,13 @@ public class Terran {
 					System.out.print(myMoney + "  " + gasMoney + "\n");
 				}
 	
+			}else if(select == 5) {
+				System.out.print("Bye bye ~ ");
+				break;
 			}
-		}
+		} // end while
+		System.out.print(myMoney + "  " + gasMoney);
+		
 	}
 }
 
